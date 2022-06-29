@@ -7,3 +7,10 @@ test("Can create a github.", () => {
     const employeeInstance = new Engineer("Alexander", 123, "agvandyke25@gmail.com", testGithub);
     expect(employeeInstance.github).toBe(testGithub);
 });
+
+//getGithub() method test
+test("Testing getGithub will return github.", () => {
+    const testGithub = "AlexandertheGreat491";
+    const employeeInstance = new Engineer("Alexander", 123, "agvandyke25@gmail.com", testGithub);
+    expect(employeeInstance.getGithub()).toBe(testGithub);
+});
