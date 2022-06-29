@@ -1,14 +1,16 @@
 function generateManager(data) {
     return `<div class="col s12 m6 l4">
-    <div class = "card">
-      <div class="card-panel purple">
+    <div class = "card z-depth-3">
+      <div class="card-panel">
          <h2>${data.getName()}</h2>
          <h3><i class="small material-icons">insert_face</i>${data.getRole()}</h1>
       </div>
       <div class="card-content">
+        <ol>
         <li>ID: ${data.getId()}</li>
         <li>Email: <a href='mailto:${data.getEmail()}'>${data.getEmail()}</a></li>
         <li>Office number: ${data.getOfficeNumber()}</li>
+        </ol>
       </div>
     </div>
     </div>`;
@@ -19,15 +21,17 @@ function generateManager(data) {
 function generateEngineer(data) {
     return `
     <div class="col s12 m6 14">
-      <div class="card">
-      <div class="card-panel purple">
+      <div class="card z-depth-3">
+      <div class="card-panel">
         <h2>${data.getName()}</h2>
         <h3><i class="small material-icons">insert_laptop_windows</i>${data.getRole()}</h3>
       </div>
       <div class="card-content">
+      <ol>
       <li>ID: ${data.getId()}</li>
       <li>Email: <a href='mailto:${getEmail()}'>${data.getEmail()}</a></li>
       <li>GitHub: ${data.getGithub()}</li>
+      </ol>
       </div>
     </div>
     </div>
@@ -37,15 +41,17 @@ function generateEngineer(data) {
 function generateIntern(data) {
     return `
     <div class="col s12 m6 14">
-      <div class="card">
-        <div class="card-panel purple">
+      <div class="card z-depth-3">
+        <div class="card-panel">
           <h2>${data.getName()}</h2>
           <h3><i class="small material-icons">insert_school</i>${data.getRole()}</h1>
         </div>
         <div class="card-content">
+        <ol>
           <li>ID: ${data.getId()}</li>
           <li>Email: <a href='mailto:${data.getEmail()}'>${data.getEmail()}</a></li>
           <li>School: ${data.getSchool()}</li>
+        </ol>
         </div>
        </div>
        </div>
