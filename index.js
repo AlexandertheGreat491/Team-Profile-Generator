@@ -48,3 +48,63 @@ const employeeInit = employeeArr => {
     console.log(totalArr);
     console.log(totalArr[0].name);
 };
+
+//questions that will prompt user for information
+const promptUser = () => {
+    return inquirer.prompt([{
+        type: 'list',
+        name: 'role',
+        message: questions.employeeType,
+        choices: ['Manager', 'Engineer', 'Intern', 'Finished adding teammates']
+    }, {
+        type: 'input',
+        name: 'name',
+        message: questions.name,
+        when: (answers) => answers.role !== 'Finished adding teammates'
+    }, {
+        type: 'input',
+        name: 'id',
+        message: questions.employeeID,
+        when: (answers) => answers.role !== 'Finished adding teammates'
+    }, {
+        type: 'input',
+        name: 'email',
+        message: questions.email,
+        when: (answers) => answers.role !== 'Finished adding teammates'
+    }, {
+        type: 'input',
+        name: 'officeNumber',
+        message: questions.github,
+        when: (answers) => answers.role === 'Manager'
+    }, {
+        type: 'input',
+        name: 'github',
+        message: questions.github,
+        when: (answers) => answers.role === 'Engineer'
+    }, {
+        type: 'input',
+        name: 'school',
+        message: questions.school,
+        when: (answers) => answers.role === 'Intern'
+    },
+
+
+    ])
+        .then((answers) => {
+            if (answers.role === 'Finished adding teammates') {
+                employeeArr.push(answers);
+                console.log('THis is the finished employee array prior')
+                console.log(employeeArr);
+                console.log(`End of Employee Question`);
+                console.log(employeeArr[0]);
+                employeeInit(employeeArr);
+            } else {
+                employeeArr.push(answers);
+                console.log(answers);
+                console.log(`adding more employees`);
+                console.log(employeeArr);
+                return promptUser();
+            }
+        });
+
+};
