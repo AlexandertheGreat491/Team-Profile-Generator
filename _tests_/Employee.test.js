@@ -49,3 +49,9 @@ test("Email can be tested through the getEmail method.", () => {
     expect(employeeInstance.getEmail()).toBe(testingEmail);
 })
 
+//getRole() method test
+test("Testing role.", () => {
+    const returnAnswer = "Employee";
+    const employeeInstance = new Employee("Alexander", 123, "agvandyke25@gmail.com");
+    expect(employeeInstance.getRole()).toBe(returnAnswer);
+})
