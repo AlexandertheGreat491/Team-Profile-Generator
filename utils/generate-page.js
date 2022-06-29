@@ -1,41 +1,15 @@
-const fs = require('fs');
-const { resolve } = require('path');
-
-//creates a Promise using the JavaScript keyword new
-
-const writeFile = fileContent => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('./dist/index.html', fileContent, err => {
-            // if there's an error, reject the Promise and send the error to the Promise's '.catch()'
-            if (err) {
-                reject(err);
-                // return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well.
-                return;
-            }
-
-            //if everything went well, resovle the Promise and send the successful data to the '.then()' method.
-            resolve({
-                ok: true,
-                message: 'File has been created!'
-            });
-        });
-    });
-
-    const copyFile = fileContent => {
-        fs.copyFile('./src/style.css', './dist/style.css', err => {
-            if (err) {
-                if (err) {
-                    reject(err);
-
-                    return;
-                }
-                resolve({
-                    ok: true,
-                    message: 'Stylesheet has been created!'
-                });
-            }
-        });
-    }
-}
-
-module.exports = { writeFile, copyFile };
+function generateManager(data) {
+    return `<div class="col s12 m6 l4">
+    <div class = "card">
+      <div class="card-panel purple">
+         <h2>${data.getName()}</h2>
+         <h3><i class="small material-icons">insert_face</i>${data.getRole()}</h1>
+      </div>
+      <div class="card-content">
+        <li>ID: ${data.getId()}</li>
+        <li>Email: <a href='mailto:${data.getEmail()}'>${data.getEmail()}</a></li>
+        <li>Office number: ${data.getOfficeNumber()}</li>
+      </div>
+    </div>
+    </div>`;
+};

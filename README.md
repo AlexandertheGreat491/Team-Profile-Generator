@@ -35,7 +35,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
-[Chris Stallcup](https://github.com/MrTofuuu)
+
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
