@@ -1,4 +1,7 @@
+//packages imported
 const inquirer = require('inquirer');
-const generatePage = require('./src/page-template');
-const {writeFile, copyFile} = require ('./utils/generate-page');
 const fs = require('fs');
+const generatePage = require ('./utils/generate-page');
+const Manager = require('./lib/Manager.js');
+const Engineer = require('./lib/Engineer.js');
+const Intern = require('./lib/Intern.js');
