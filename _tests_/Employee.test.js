@@ -1,4 +1,5 @@
 
+
 const Employee = require('../lib/Employee.js');
 
 //tests
@@ -34,3 +35,11 @@ test("Name is gotten through the getName method.", () => {
     const employeeInstance = new Employee(testName);
     expect(employeeInstance.getName()).toBe(testName);
 })
+
+//getId() method test
+test("Can test ID through getID method.", () => {
+    const testID = 123;
+    const employeeInstance = new Employee("Alexander", testID);
+    expect(employeeInstance.getId()).toBe(testID);
+})
+
