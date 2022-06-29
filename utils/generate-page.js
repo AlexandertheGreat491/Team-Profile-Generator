@@ -116,5 +116,16 @@ function generatePage(totalArr) {
       <header class='banner valign-wrapper'>
         <h1 class='center-align'>Employee Roster Generator</h1>
       </header>
+      <div class="container row">
+      ${generateTeam(totalArr)}
+      </div>
+      </div>
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+              
+      </body>
+
+      </html>;
     `
 }
