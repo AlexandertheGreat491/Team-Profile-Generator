@@ -93,5 +93,23 @@ function generateTeam(teamRosterArr) {
 function generatePage(totalArr) {
     console.log(`generate Page`)
     return`<!DOCTYPE html>
+    <html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <!--icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>Employee Roster Generator</title>
+    </head>
     `
 }
