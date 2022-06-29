@@ -51,3 +51,41 @@ function generateIntern(data) {
        </div>
     `;
 };
+
+function generateTeam(teamRosterArr) {
+    let totaltotalArr;
+    //checking for employee type
+    console.log(`generateTeam`);
+    console.log(teamRosterArr);
+    let appearArr = [];
+    teamRosterArr.forEach(employee => {
+        console.log(`switch statement`);
+        console.log(employee);
+        const role = employee.getRole();
+        switch (role) {
+            case 'Manager':
+                const managerInformation = generateManager(employee);
+                console.log(managerInformation);
+                appearArr.push(managerInformation);
+                break;
+            case 'Engineer':
+                const engineerInformation = generateEngineer(employee);
+                console.log(engineerInformation);
+                appearArr.push(engineerInfomration);
+                break;
+            case 'Intern':
+                const internInformation = generateIntern(employee);
+                console.log(internInformation);
+                appearArr.push(internInformation);
+                break;
+            default:
+                'Uh-oh someting went wrong sir'
+
+        }
+        // console.log(appearArr.join(''));
+        totaltotalArr = appearArr.join('');
+        console.log(totaltotalArr);
+    })
+    return totaltotalArr;
+    // calls the function specific to the type of employee.
+}
