@@ -40,7 +40,10 @@ List your collaborators, if any, with links to their GitHub profiles.
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
 If you followed tutorials, include links to those here as well.
+[Jest](https://jestjs.io/docs/getting-started)
 [Materialize](https://materializecss.com/about.html)
+[NPM](https://www.npmjs.com/package/inquirer#installation)
+[W3Schools Px to Em Conversion](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 ## License
 
