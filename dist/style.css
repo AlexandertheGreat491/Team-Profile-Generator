@@ -7,10 +7,16 @@
 
 body {
     background-color: #8585ad;
+    font-size: 1.125em;
 }
 
 .banner {
     background-color: #008000;
+    height: 12.5em; 
+}
+
+.row {
+    margin-top: 1.875em;
 }
 
 h1,
@@ -19,6 +25,5 @@ h3 {
     font-weight: 500;
     margin: 0.3125em 0;
     color: #e68a00;
-    line-height: 1.5;
-    font-size: 1.125em;  
+    line-height: 1.5;  
 }
