@@ -1,3 +1,4 @@
+
 const Employee = require('../lib/Employee.js');
 
 //tests
@@ -18,4 +19,11 @@ test("Testing ID.", () => {
     const id = 123;
     const employeeInstance = new Employee("Alexander", id);
     expect(employeeInstance.id).toBe(id);
+})
+
+//Email test
+test("Testing email.", () => {
+    const email = "agvandyke25@gmail.com";
+    const employeeInstance = new Employee("Alexander", 123, email);
+    expect(employeeInstance.email).toBe(email);
 })
