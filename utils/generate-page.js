@@ -89,3 +89,9 @@ function generateTeam(teamRosterArr) {
     return totaltotalArr;
     // calls the function specific to the type of employee.
 }
+
+function generatePage(totalArr) {
+    console.log(`generate Page`)
+    return`<!DOCTYPE html>
+    `
+}
