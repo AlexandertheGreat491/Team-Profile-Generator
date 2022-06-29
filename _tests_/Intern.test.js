@@ -1,4 +1,5 @@
 //require statement
+//object will inherit methods from parent
 
 const Intern = require("../lib/Intern");
 
