@@ -111,5 +111,10 @@ function generatePage(totalArr) {
         <link rel="stylesheet" href="style.css">
         <title>Employee Roster Generator</title>
     </head>
+
+    <body>
+      <header class='banner valign-wrapper'>
+        <h1 class='center-align'>Employee Roster Generator</h1>
+      </header>
     `
 }
