@@ -108,3 +108,16 @@ const promptUser = () => {
         });
 
 };
+
+//This function will initialize the app.
+const init = () => {
+    promptUser()
+    //writeFileSync method uses promises instead of a callback function
+    .then((() => fs.writeFileSync('./dist/index.html', generatePage(totalArr))))
+
+    .then(() => console.log('Successfully wrote to index.html'))
+    .catch((err) => console.error(err));
+};
+
+//This function call will initialize the app.
+init();
