@@ -27,3 +27,10 @@ test("Testing email.", () => {
     const employeeInstance = new Employee("Alexander", 123, email);
     expect(employeeInstance.email).toBe(email);
 })
+
+//getName() method test
+test("Name is gotten through the getName method.", () => {
+    const testName = "Alexander";
+    const employeeInstance = new Employee(testName);
+    expect(employeeInstance.getName()).toBe(testName);
+})
