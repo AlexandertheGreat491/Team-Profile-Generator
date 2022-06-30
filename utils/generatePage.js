@@ -96,7 +96,7 @@ function generateTeam(teamRosterArr) {
     // calls the function specific to the type of employee.
 }
 
-function generatePage(totalArr) {
+function generateHTML(totalArr) {
     console.log(`generate Page`)
     return`<!DOCTYPE html>
     <html lang="en">
