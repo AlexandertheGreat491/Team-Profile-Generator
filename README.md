@@ -2,34 +2,19 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+I created this project to enable the user to create roster of the employees using Jest, Inquirer, Nodejs, JavaScript, and customized styling and the Materialize CSS framework. I learned how to apply what I already knew about generating files, Nodejs, JavaScript, and Inquirer to being partnered with Jest, object-oriented programming, and test-driven development.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Please access the [Public GitHub repostiory](https://github.com/AlexandertheGreat491/Team-Profile-Generator) for this project and clone the code to you local computer to install the application.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The app can be used by accessing the public GitHub repository as specified in the Installation instructions, cloning the code to your local computer, and running the app in the command line using index.js. When the app runs successfully your command line should look similar to the screenshot below.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+
 ![Screenshot 2022-06-30 130651](https://user-images.githubusercontent.com/64184203/176758943-8c753605-ab42-4af4-91f8-14d2435a00de.jpg)
 
-    
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
