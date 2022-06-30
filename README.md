@@ -17,11 +17,16 @@ The app can be used by accessing the public GitHub repository as specified in th
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+[Alex Van Dyke](https://github.com/AlexandertheGreat491/Team-Profile-Generator)
 
-If you followed tutorials, include links to those here as well.
+Tutorials:
+
+[GeeksforGeeks](https://www.geeksforgeeks.org/node-js-fs-writefile-method/)
+[Inquirer](https://www.npmjs.com/package/inquirer#installation)
+[Jest](https://jestjs.io/)
+
 
 ## License
 
