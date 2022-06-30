@@ -1,4 +1,5 @@
 //require statement
+//will use methods from parent
 const Manager = require("../lib/Manager");
 
 //tests
