@@ -1,10 +1,10 @@
 //importing packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generatePage = require('./utils/generatePage.js');
-const Manager = require('./lib/Manager.js');
-const Engineer = require('./lib/Engineer.js');
-const Intern = require('./lib/Intern.js');
+const generatePage = require('./utils/generatePage');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 //storing employee info from prompts
 let employeeArr = [];
 let totalArr = [];
@@ -22,9 +22,9 @@ const questions = {
 // prompting user for information
 
 const employeeInit = empArr => {
-    managerArr = empArr.filter(empArr => empArr.role === 'Manager');
-    engineerArr = empArr.filter(empArr => empArr.role === 'Engineer');
-    internArr = empArr.filter(empArr => empArr.role === 'Intern');
+    managerArr = employeeArr.filter(employeeArr => employeeArr.role === 'Manager');
+    engineerArr = employeeArr.filter(employeeArr => employeeArr.role === 'Engineer');
+    internArr = employeeArr.filter(employeeArr => employeeArr.role === 'Intern');
 
     managerArr.forEach(manager => {
         const parsedId = parseInt(manager.id);
@@ -55,7 +55,7 @@ const promptUser = () => {
             message: questions.employeeType,
             choices: ['Manager', 'Engineer', 'Intern', 'Finished adding teammates']
         },
-         {
+        {
             type: 'input',
             name: 'name',
             message: questions.name,
@@ -111,30 +111,19 @@ const promptUser = () => {
     });
 };
 
-//Function writes the html file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function(err){
-        if (err) throw err;
-        console.log('testindex.html file created!');
-    })
-};
 
-//const init = () => {
-    //promptUser()
-        // .then(console.log("end of init"))
-        // Use writeFileSync method to use promises instead of a callback function
-        //.then((() => fs.writeFileSync('./dist/index.html', generatePage(totalArr))))
-
-    //.then(() => console.log('Successfully wrote to index.html'))
-        //.catch((err) => console.error(err));
-//};
 
 // function to initialize app
-function init() {
-    inquirer.prompt(questions).then(function (data){
-        writeToFile("testindex.html", generatePage(data))
-    });
+const init = () => {
+    promptUser()
+        // .then(console.log("end of init"))
+        // Use writeFileSync method to use promises instead of a callback function
+        .then((() => fs.writeToSync('./dist/index.html', generatePage(totalArr))))
+
+    .then(() => console.log('Successfully wrote to index.html'))
+        .catch((err) => console.error(err));
 };
+
 
 // Function call to initialize app
 init();
