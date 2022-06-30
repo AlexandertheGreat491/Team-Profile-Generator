@@ -118,7 +118,7 @@ const init = () => {
     promptUser()
         // .then(console.log("end of init"))
         // Use writeFileSync method to use promises instead of a callback function
-        .then((() => fs.writeToSync('./dist/index.html', generatePage(totalArr))))
+        .then((() => fs.writeFile('./dist/index.html', generatePage(totalArr))))
 
     .then(() => console.log('Successfully wrote to index.html'))
         .catch((err) => console.error(err));
