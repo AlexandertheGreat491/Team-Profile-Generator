@@ -1,5 +1,5 @@
 # Team-Profile-Generator
-
+[Team-Profile-Generator-App-Walkthrough](https://vimeo.com/725794910) video
 ## Description
 
 I created this project to enable the user to create roster of the employees using Jest, Inquirer, Nodejs, JavaScript, and customized styling and the Materialize CSS framework. I learned how to apply what I already knew about generating files, Nodejs, JavaScript, and Inquirer to being partnered with Jest, object-oriented programming, and test-driven development.
@@ -7,6 +7,8 @@ I created this project to enable the user to create roster of the employees usin
 ## Installation
 
 Please access the [Public GitHub repostiory](https://github.com/AlexandertheGreat491/Team-Profile-Generator) for this project and clone the code to you local computer to install the application.
+
+Please view the [Team-Profile-Generator-App-Walkthrough](https://vimeo.com/725794910) video to see how the app is supposed to function.
 
 ## Usage
 
