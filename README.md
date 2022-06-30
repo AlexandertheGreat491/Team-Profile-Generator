@@ -8,7 +8,7 @@ I created this project to enable the user to create roster of the employees usin
 
 Please access the [Public GitHub repostiory](https://github.com/AlexandertheGreat491/Team-Profile-Generator) for this project and clone the code to you local computer to install the application.
 
-Please view the [Team-Profile-Generator-App-Walkthrough](https://vimeo.com/725810012) video to see how the app is supposed to function.
+Please view the [Team-Profile-Generator-App-Walkthrough](https://vimeo.com/725810012) video to see how the app is supposed to function and that all four tests pass.
 
 ## Usage
 
