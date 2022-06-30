@@ -29,7 +29,7 @@ function generateEngineer(data) {
       <div class="card-content">
       <ol>
       <li>ID: ${data.getId()}</li>
-      <li>Email: <a href='mailto:${getEmail()}'>${data.getEmail()}</a></li>
+      <li>Email: <a href='mailto:${data.getEmail()}'>${data.getEmail()}</a></li>
       <li>GitHub: ${data.getGithub()}</li>
       </ol>
       </div>
@@ -77,7 +77,7 @@ function generateTeam(teamRosterArr) {
             case 'Engineer':
                 const engineerInformation = generateEngineer(employee);
                 console.log(engineerInformation);
-                appearArr.push(engineerInfomration);
+                appearArr.push(engineerInformation);
                 break;
             case 'Intern':
                 const internInformation = generateIntern(employee);
@@ -137,3 +137,5 @@ function generatePage(totalArr) {
       </html>;
     `
 }
+
+module.exports = generatePage;
