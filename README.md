@@ -28,7 +28,8 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ![Screenshot 2022-06-30 130651](https://user-images.githubusercontent.com/64184203/176756284-bc72c0dc-4343-47d4-85c5-62b7f719431f.jpg)
+![Screenshot 2022-06-30 130651](https://user-images.githubusercontent.com/64184203/176756589-2467ca8d-e7ee-4b42-9d27-6748d6dbb032.jpg)
+
 
 
 ## Credits
