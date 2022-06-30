@@ -119,7 +119,7 @@ function generatePage(totalArr) {
     </head>
 
     <body>
-      <header class='banner valign-wrapper'>
+      <header class='banner'>
         <h1 class='center-align'>Employee Roster Generator</h1>
       </header>
       <div class="container row">
